@@ -8,9 +8,9 @@ describe('<Movielist>', () => {
     const formInput = cy.get('form input');
     formInput.should('have.value', '');
     formInput.type('Monster Inc.')
-      .should('have.value', 'Monster Inc.')
+      .should('have.value', 'Monster Inc.');
     cy.get('form button').click();
-    formInput.clear()
+    formInput.clear();
     formInput.type('Circle of eight')
       .should('have.value', 'Circle of eight');
     cy.get('form button').click();
